@@ -11,15 +11,20 @@ class LoginPage extends StatefulWidget {
 class _LoginPageState extends State<LoginPage> {
   @override
   Widget build(BuildContext context) {
+    final GlobalKey<FormState> formKey = GlobalKey<FormState>();
+
     return Scaffold(
       body:  SingleChildScrollView(
         child: Padding(
-          padding: EdgeInsets.only(
-            left: 10, bottom: 10, top: 10, right: 10
-              msms cmckc skcmskmcm scnsjncs csm xjnsc cs mxjsnx njsxmsjxnxhnchnsbnmsnxjhsnbbcshcncshx jnnxjsnxjxsjsnsjhbhcnsc
-              snsjncjnsncnjsndncnjsnnshiunzou wo sasageyo
-              tum tum tum tum shin wa sui karo no wo etin no caro , fo sheki karo no mo hei tin no tal ,la kei you , tim mina as an ko kiwan shogeki no go wo sita e tutyo na ra came ka eeiii kjdj
-              ahnd n djjen bd akkfmjiendf bakidfnfnfjewbnd  b
+          padding: EdgeInsets.symmetric(
+            horizontal: 2, vertical: 80
+          ),
+          child: Form(
+            key: formKey,
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              crossAxisAlignment: CrossAxisAlignment.center,
+            ),
           ),
         ),
       ),
