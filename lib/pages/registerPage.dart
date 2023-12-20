@@ -13,8 +13,6 @@ class RegisterPage extends StatefulWidget {
 }
 
 class _RegisterPageState extends State<RegisterPage> {
-
-
   @override
   Widget build(BuildContext context) {
     bool _isLoading = false;
@@ -129,7 +127,7 @@ class _RegisterPageState extends State<RegisterPage> {
                         style: TextStyle(color: Colors.white, fontSize: 16),
                       ),
                       onPressed: () {
-                        //register();
+
                       },
                     ),
                   ),
@@ -156,7 +154,7 @@ class _RegisterPageState extends State<RegisterPage> {
                 ]),
           ),
         )));
-    register()async {
+    void register()async {
       if(formKey.currentState!.validate()){
         setState(() {
           _isLoading= true;
@@ -166,7 +164,6 @@ class _RegisterPageState extends State<RegisterPage> {
       }
     }
   }
-
 
 
 }
